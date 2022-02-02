@@ -1,7 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
 #textRed {
   color: red;
 }
 
-* {
-  box-sizing: border-box;
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.mainNav {
+  display: flex;
+  flex-direction: column;
+}
+.burgerNav {
+  background-color: lightskyblue;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+.productPurchase > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.productPurchase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.productPurchase > ul {
+  grid-column: span 2;
+}
+.productInfo {
+  background-color: wheat;
+  margin: 5%;
+}
+.productInfo > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.productPurchase > h3 {
+  text-align: right;
+  padding-right: 2vw;
 }
